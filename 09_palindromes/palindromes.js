@@ -2,7 +2,7 @@ const palindromes = function(original) {
     // Uses regex. [^...] means ignore what's inside. /g means globally i.e, in the whole string
     // Using this we convert everything other than characters to '' i.e, nothing, removing them from the new returned string
     original = original.toLowerCase().replace(/[^a-z]/g, '');
-    reversed = reverseString(original).toLowerCase().replace(/[^a-z]/g, '');
+    reversed = reverseString(original);
     return (original === reversed) ? true : false;
 };
 
